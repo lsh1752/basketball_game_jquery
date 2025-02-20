@@ -1,4 +1,15 @@
-🏀 Basketball Game Project
+# 🏀 Basketball Game Project 
+
+---
+### 목차
+- 📖 프로젝트 소개
+- 🕰️ 버전 히스토리
+- ⚙️ 주요 개념 및 원리
+- 🆚 jQuery 적용의 장단점
+- 📚 배운 점과 앞으로의 과제
+- 💻 프로젝트 실행 방법
+- 🏁 마무리
+---
 
 📖 프로젝트 소개
 
@@ -21,10 +32,12 @@ DOM 조작: document.getElementById(), document.getElementsByClassName() 사용
 코드 중복 제거: 점수 업데이트, 버튼 활성화/비활성화 등의 기능을 함수화
 
 객체화: game, computer, user 객체를 도입하여 관련 변수를 묶음
+- computer 객체 내에 score, percent2, percent3 속성을 대입했고 이는 초기 ver의 comScore, comPercent2, comPercent3를 리팩토링한 사례에 해당함
 
 동적 속성 접근: computer['percent' + shootType] 방식으로 속성에 동적으로 접근
 
 AI 로직 추가: 점수 차이에 따라 컴퓨터의 슛 성공 확률이 조정되도록 구현
+- AI 로직 추가 전 에는 확률이 변하지 않아서 컴퓨터를 이기기 어렵지 않았으나 AI를 추가한 이후에는 컴퓨터를 이기기가 더욱 어려워짐
 
 💡 3. jQuery 도입
 
@@ -33,8 +46,10 @@ DOM 셀렉션: $('#user-score'), $('.btn-computer') 등 CSS 선택자 문법을 
 이벤트 처리: .on() 메서드를 통해 이벤트 바인딩
 
 애니메이션 효과: .fadeIn(), .fadeOut()과 콜백 함수 사용으로 자연스러운 전환 효과 추가
+- 애니메이션 효과를 넣기 전에는 글자 변화가 부자연 스러웠으나 사용 후에는 글자가 자연스럽게 변화하게 됨
 
 플러그인 사용: jquery.animateNumber 플러그인을 통해 점수판의 숫자 애니메이션 적용
+- 애니메이션 효과를 넣은 후에는 숫자가 1씩 자연스럽게 올라가도록 변함
 
 ⚙️ 주요 개념 및 원리 (Key Concepts & Principles)
 
@@ -91,6 +106,8 @@ DOM 조작 및 이벤트 처리의 효율적인 방법 학습
 비동기 함수와 콜백 함수의 사용법 익힘
 
 코드 리팩토링을 통해 유지보수성과 가독성 개선
+
+JS의 다양한 기능과 사용법 들을 익힘
 
 🚀 앞으로의 과제
 
